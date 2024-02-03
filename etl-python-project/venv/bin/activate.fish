@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/bc/Desktop/IBMProjects/etl-python-project/venv"
+set -gx VIRTUAL_ENV "/home/bc/Desktop/Data_Eng_Projects/etl-python-project/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
