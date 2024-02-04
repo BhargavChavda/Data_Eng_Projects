@@ -1,20 +1,24 @@
 import json
 import pandas as pd
-import datetime
+from datetime import datetime
 import requests
 import sqlite3
-import BeautifulSoup
+import bs4 as bs
 
-def log_progress(message):
-    time_format = '%Y-%h-%d-%H:%M:%S'
-    now = datetime.datetime.now()
-    timestamp = now.strftime(time_format)
-    with open("./code_log.txt","a") as f:
-        f.write(timestamp + ':' + message + '\n')
-   
-#log_progress("test")
+def log_progress():
+    time = datetime.now()
 
-def extract(url,attributes):
-    page = requests.get(url).text
-    data = BeautifulSoup(page,'html.parser')
-    df = pd.DataFrame(columns=attributes)
+
+log_progress()
+#def extract(url, table_attribs):
+#    
+#    return df
+#
+#def transform(df, csv_path):
+#
+#   return df
+#
+#def load_to_csv(df, output_path):
+#    
+#def load_to_db(df, sql_connection, table_name):
+#    
