@@ -1,2 +1,3 @@
 
 2024-Jan-21-22:50:19:test
+2024-02-04 21:49:59.477688 : Preliminaries complete. Initializing ETL Process
